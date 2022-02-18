@@ -21,5 +21,6 @@ export default StyleSheet.create({
   },
   headerButton: {
     padding: 8,
+    height: 30,
   },
 });
