@@ -11,10 +11,9 @@ import Users from '../../screens/users'
 
 const { Navigator, Screen } = createBottomTabNavigator();
 
-const PersonIcon = (props) => <Icon {...props} name="person-outline" />;
+const ScheduleIcon = (props) => <Icon {...props} name="clock-outline" />;
 
-
-const EmailIcon = (props) => <Icon {...props} name="email-outline" />;
+const OrderIcon = (props) => <Icon {...props} name="grid-outline" />;
 
 const UsersScreen = () => (
   <Users/>
@@ -32,8 +31,8 @@ const BottomTabBar = ({ navigation, state }) => (
     onSelect={(index) => navigation.navigate(state.routeNames[index])}
     style={{ marginTop: -10 }}
   >
-    <BottomNavigationTab icon={PersonIcon} />
-    <BottomNavigationTab icon={EmailIcon} />
+    <BottomNavigationTab icon={ScheduleIcon} />
+    <BottomNavigationTab icon={OrderIcon} />
   </BottomNavigation>
 );
 
@@ -42,9 +41,10 @@ const TabNavigator = () => (
     tabBar={(props) => <BottomTabBar {...props} />}
     screenOptions={{
       headerShown: false,
+      unmountOnBlur: true,
     }}
   >
-    <Screen name="Users" component={UsersScreen} />
+    <Screen name="Schedule" component={UsersScreen} />
     <Screen name="Orders" component={OrdersScreen} />
   </Navigator>
 );

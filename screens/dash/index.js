@@ -1,8 +1,7 @@
 import { Avatar, Text } from '@ui-kitten/components';
-import { View ,Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, TouchableOpacity } from 'react-native';
 import { Icon } from 'react-native-elements';
 import BottomBar from '../../components/bottomBar';
-import Profile from '../../components/profile';
 
 const styles = StyleSheet.create({
   layoutStyle: {
@@ -12,15 +11,18 @@ const styles = StyleSheet.create({
     padding: 40,
   },
   header: {
-    padding: 20,
-    height: 70,
+    paddingBottom: 25,
+    paddingTop: 25,
+    paddingLeft: 20,
+    paddingRight: 20,
+    height: 80,
     justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'row',
     backgroundColor: '#fff',
   },
   headerButton: {
-    padding: 5,
+    padding: 8,
   },
 });
 
@@ -32,19 +34,21 @@ const DashScreen = ({ navigation }) => {
           style={styles.headerButton}
           onPress={() => navigation.goBack()}
         >
-          <Icon color="#2a2a2c" name="left" type="antdesign" />
+          <Icon size={16} color="#2a2a2c" name="left" type="antdesign" />
         </TouchableOpacity>
         <Text>Calendar</Text>
-        <TouchableOpacity style={styles.headerButton}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate('Profile')}
+          style={styles.headerButton}
+        >
           <Avatar
-            size="medium"
+            size="small"
             source={{
-              uri: 'https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v937-aew-111_3.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=8ce2cd03f94f2baddcb332cfb50f78b9',
+              uri: 'https://forums.techguy.org/proxy.php?image=https%3A%2F%2Ffirefoxusercontent.com%2F00000000000000000000000000000000&hash=ab82de118db266fad1a6b77a8cc8539d',
             }}
           />
         </TouchableOpacity>
       </View>
-      {/*<Profile /> */}
       <BottomBar />
     </>
   );

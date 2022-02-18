@@ -22,6 +22,7 @@ const styles = StyleSheet.create({
     alignItems: 'flex-start',
     flexWrap: 'nowrap',
     flexDirection: 'row',
+    marginTop: -10,
   },
   date: {
     color: '#2a2a2c',
