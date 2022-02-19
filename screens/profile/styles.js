@@ -9,11 +9,11 @@ export default StyleSheet.create({
     backgroundColor: '#fff',
   },
   header: {
-    paddingBottom: 25,
-    paddingTop: 25,
+    paddingBottom: 10,
+    paddingTop: 30,
     paddingLeft: 20,
     paddingRight: 20,
-    height: 70,
+    height: 75,
     justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'row',
@@ -21,6 +21,7 @@ export default StyleSheet.create({
   },
   headerButton: {
     padding: 8,
+    width: 30,
     height: 30,
   },
 });

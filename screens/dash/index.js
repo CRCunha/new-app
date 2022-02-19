@@ -11,17 +11,18 @@ const styles = StyleSheet.create({
     padding: 40,
   },
   header: {
-    paddingBottom: 25,
-    paddingTop: 25,
+    paddingBottom: 10,
+    paddingTop: 30,
     paddingLeft: 20,
     paddingRight: 20,
-    height: 80,
+    height: 75,
     justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'row',
     backgroundColor: '#fff',
   },
   headerButton: {
+    width: 50,
     padding: 8,
   },
 });
@@ -36,7 +37,7 @@ const DashScreen = ({ navigation }) => {
         >
           <Icon size={16} color="#2a2a2c" name="left" type="antdesign" />
         </TouchableOpacity>
-        <Text>Calendar</Text>
+        <Text>Agenda</Text>
         <TouchableOpacity
           onPress={() => navigation.navigate('Profile')}
           style={styles.headerButton}

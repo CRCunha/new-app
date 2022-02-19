@@ -14,13 +14,17 @@ const Profile = ({ navigation }) => {
         >
           <Icon size={16} color="#2a2a2c" name="left" type="antdesign" />
         </TouchableOpacity>
-        <Text></Text>
+        <Text>Perfil</Text>
         <TouchableOpacity
           style={{ backgroundColor: '#fff' }}
           style={styles.headerButton}
-        ></TouchableOpacity>
+        >
+          <Icon size={16} color="#2a2a2c" name="right" type="antdesign" />
+        </TouchableOpacity>
       </View>
-      <View style={styles.layoutStyle}></View>
+      <View style={styles.layoutStyle}>
+        
+      </View>
     </>
   );
 };

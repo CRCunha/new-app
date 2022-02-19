@@ -12,44 +12,51 @@ export default StyleSheet.create({
   },
   cardAsside: {
     flexDirection: 'column',
-    width: '15%',
+    width: '20%',
     height: '100%',
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     alignItems: 'center',
   },
-  cardAssideUpper: {
-    width: 16,
-    height: '8%',
-    borderRadius: 100,
-    backgroundColor: '#ccc',
-  },
-  cardAssideUpperFisrt: {
-    width: 17.5,
-    height: '9%',
-    borderRadius: 100,
-    backgroundColor: '#fff',
+  buttonAccept: {
+    width: 42,
+    height: 42,
+    borderRadius: 14,
 
-    borderStyle: 'solid',
-    borderWidth: 4.5,
-    borderColor: '#171717',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 5,
+
+    backgroundColor: '#00A0D3',
+
+    shadowColor: '#171717',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.05,
+    shadowRadius: 2,
   },
-  cardAssideLine: {
-    backgroundColor: '#ddd',
-    height: '46%',
-    width: 3,
-  },
-  cardAssideLast: {
-    backgroundColor: 'transparent',
-    height: '46%',
-    width: 3,
+  buttonDecline: {
+    width: 42,
+    height: 42,
+    borderRadius: 14,
+
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: 5,
+
+    backgroundColor: '#FDB576',
+
+    shadowColor: '#171717',
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.05,
+    shadowRadius: 2,
   },
   cardType1: {
-    width: '85%',
+    width: '80%',
     height: '70%',
     backgroundColor: '#D38DFF',
     borderRadius: 24,
     paddingLeft: 20,
     paddingRight: 20,
+    justifyContent: 'center',
 
     shadowColor: '#171717',
     shadowOffset: { width: 0, height: 3 },
@@ -57,12 +64,13 @@ export default StyleSheet.create({
     shadowRadius: 2,
   },
   cardType2: {
-    width: '85%',
+    width: '80%',
     height: '70%',
     backgroundColor: '#FF94A7',
     borderRadius: 24,
     paddingLeft: 20,
     paddingRight: 20,
+    justifyContent: 'center',
 
     shadowColor: '#171717',
     shadowOffset: { width: 0, height: 3 },
@@ -71,10 +79,12 @@ export default StyleSheet.create({
   },
   top: {
     width: '100%',
-    height: '35%',
+    height: '50%',
+    flexWrap: 'wrap',
     justifyContent: 'space-between',
     alignItems: 'flex-end',
     flexDirection: 'row',
+    flexDirection: 'column',
   },
   title: {
     color: '#fff',
@@ -93,9 +103,16 @@ export default StyleSheet.create({
   tagTitle: {
     color: '#2a2a2c',
   },
+  top: {
+    width: '100%',
+    height: '20%',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    flexDirection: 'row',
+  },
   bot: {
     width: '100%',
-    height: '50%',
+    height: '35%',
     justifyContent: 'space-between',
     alignItems: 'flex-end',
     flexDirection: 'row',
@@ -106,5 +123,17 @@ export default StyleSheet.create({
   },
   date: {
     color: '#fff',
+  },
+  descritpion: {
+    fontWeight: '400',
+    color: '#fff',
+    fontSize: 16,
+    width: '100%',
+  },
+  name: {
+    fontWeight: '600',
+    color: '#fff',
+    fontSize: 22,
+    width: '100%',
   },
 });

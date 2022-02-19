@@ -29,9 +29,21 @@ const CardUser = ({data, first, last}) => {
         </View>
         <View style={styles.bot}>
           <View style={styles.avatarContainer}>
-            <Avatar source={{ uri: data.avatar }} />
             <Avatar
-              style={{ marginLeft: -15 }}
+              style={{
+                borderStyle: 'solid',
+                borderWidth: 1,
+                borderColor: '#fff',
+              }}
+              source={{ uri: data.avatar }}
+            />
+            <Avatar
+              style={{
+                marginLeft: -15,
+                borderStyle: 'solid',
+                borderWidth: 1,
+                borderColor: '#fff',
+              }}
               source={{ uri: data.avatar2 }}
             />
           </View>

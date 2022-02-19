@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout, Text } from '@ui-kitten/components';
 import { StyleSheet, ScrollView, View } from 'react-native';
-import CardUser from '../../components/cardUser';
+import CardOrder from '../../components/cardOrder';
 import data from './data.json';
 import moment from 'moment';
 
@@ -44,9 +44,7 @@ const styles = StyleSheet.create({
   },
 });
 
-const Users = () => {
-
-  console.log(data[5].id);
+const Orders = () => {
 
   return (
     <Layout style={styles.layoutStyle}>
@@ -56,9 +54,9 @@ const Users = () => {
           <Text style={styles.tagText}>{data.length} Task</Text>
         </View>
       </View>
-      <ScrollView style={{ paddingLeft: 15, paddingRight: 15 }}>
+      <ScrollView style={{ paddingLeft: 15, paddingRight: 10 }}>
         {data.map((value) => (
-          <CardUser
+          <CardOrder
             key="id"
             last={data[data.length - 1].id === value.id ? 'last' : null}
             first={data[0].id === value.id ? 'first' : null}
@@ -70,4 +68,4 @@ const Users = () => {
   );
 };
 
-export default Users;
+export default Orders;
