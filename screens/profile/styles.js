@@ -6,10 +6,10 @@ export default StyleSheet.create({
     justifyContent: 'flex-start',
     alignItems: 'center',
     paddingBottom: 10,
-    paddingTop: 5,
     paddingLeft: 20,
     paddingRight: 20,
     backgroundColor: '#fff',
+
   },
   header: {
     paddingBottom: 10,
@@ -57,5 +57,20 @@ export default StyleSheet.create({
     color: '#ccc',
     fontWeight: '400',
     fontSize: 14,
+  },
+  skillsContainer: {
+    paddingLeft: 10,
+    paddingRight: 10,
+    marginTop: 10,
+    width: '100%',
+    height: 90,
+  },
+  descritpionSkills: {
+    paddingLeft: 5,
+    paddingRight: 5,
+    color: '#ccc',
+    fontWeight: '400',
+    fontSize: 12,
+    marginBottom: 20,
   },
 });

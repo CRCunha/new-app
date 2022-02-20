@@ -1,8 +1,23 @@
 import React from "react";
-import { View, TouchableOpacity } from 'react-native';
+import { View, TouchableOpacity, ScrollView } from 'react-native';
 import { Icon } from 'react-native-elements';
 import { Text, Avatar } from '@ui-kitten/components';
+
 import styles from './styles';
+
+const SquareView = (props) => {
+  return (
+    <View
+      style={{
+        height: 40,
+        width: 80,
+        backgroundColor: props.color,
+        borderRadius: 20,
+        marginRight: 10
+      }}
+    />
+  );
+};
 
 const Profile = ({ navigation }) => {
   return (
@@ -35,6 +50,17 @@ const Profile = ({ navigation }) => {
             <Text style={styles.name}>User Name</Text>
             <Text style={styles.descritpion}>User Description</Text>
           </View>
+        </View>
+        <View style={styles.skillsContainer}>
+          <Text style={styles.descritpionSkills}>Habilidades</Text>
+          <ScrollView horizontal={true}>
+            <SquareView size={100} color="#90A9FF" />
+            <SquareView size={100} color="#CEB0FF" />
+            <SquareView size={100} color="#90A9FF" />
+            <SquareView size={100} color="#CEB0FF" />
+            <SquareView size={100} color="#90A9FF" />
+            <SquareView size={100} color="#CEB0FF" />
+          </ScrollView>
         </View>
       </View>
     </>
