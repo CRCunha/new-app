@@ -1,7 +1,8 @@
 import { Avatar, Text } from '@ui-kitten/components';
-import { View, StyleSheet, TouchableOpacity } from 'react-native';
+import { View, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import { Icon } from 'react-native-elements';
 import BottomBar from '../../components/bottomBar';
+import data from './data.json';
 
 const styles = StyleSheet.create({
   layoutStyle: {
@@ -25,7 +26,34 @@ const styles = StyleSheet.create({
     width: 50,
     padding: 8,
   },
+  textSkills: {
+    color: '#fff',
+    fontWeight: '400',
+    fontSize: 12,
+  },
 });
+
+const SquareView = (props) => {
+  return (
+    <Avatar
+      style={{
+        height: 60,
+        width: 60,
+        backgroundColor: props.color,
+        borderRadius: 60,
+        marginRight: 8,
+        marginLeft: 8,
+        justifyContent: 'center',
+        alignItems: 'center',
+
+        borderStyle: 'solid',
+        borderWidth: 3,
+        borderColor: props.color,
+      }}
+      source={{ uri: props.avatar }}
+    ></Avatar>
+  );
+};
 
 const DashScreen = ({ navigation }) => {
   return (
@@ -49,6 +77,24 @@ const DashScreen = ({ navigation }) => {
             }}
           />
         </TouchableOpacity>
+      </View>
+      <View style={{ paddingLeft: 15, backgroundColor: '#fff' }}>
+        <ScrollView
+          style={{
+            width: '100%',
+            backgroundColor: '#fff',
+            paddingBottom: 15,
+          }}
+          horizontal={true}
+        >
+          {data.map((value) => (
+            <SquareView
+              color={value.color}
+              text="skill 1"
+              avatar={value.avatar}
+            />
+          ))}
+        </ScrollView>
       </View>
       <BottomBar />
     </>
