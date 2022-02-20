@@ -9,7 +9,6 @@ export default StyleSheet.create({
     paddingLeft: 20,
     paddingRight: 20,
     backgroundColor: '#fff',
-
   },
   header: {
     paddingBottom: 10,
@@ -60,7 +59,7 @@ export default StyleSheet.create({
   },
   skillsContainer: {
     paddingLeft: 10,
-    paddingRight: 10,
+    paddingRight: 0,
     marginTop: 10,
     width: '100%',
     height: 90,
@@ -72,5 +71,10 @@ export default StyleSheet.create({
     fontWeight: '400',
     fontSize: 12,
     marginBottom: 20,
+  },
+  textSkills: {
+    color: '#fff',
+    fontWeight: '400',
+    fontSize: 12,
   },
 });
