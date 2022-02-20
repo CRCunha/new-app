@@ -12,10 +12,10 @@ export default StyleSheet.create({
   },
   cardAsside: {
     flexDirection: 'column',
-    width: '20%',
+    width: '18%',
     height: '100%',
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'flex-end',
   },
   buttonAccept: {
     width: 42,
@@ -52,7 +52,7 @@ export default StyleSheet.create({
   cardType1: {
     width: '80%',
     height: '70%',
-    backgroundColor: '#D38DFF',
+    backgroundColor: '#90A9FF',
     borderRadius: 24,
     paddingLeft: 20,
     paddingRight: 20,
@@ -66,7 +66,7 @@ export default StyleSheet.create({
   cardType2: {
     width: '80%',
     height: '70%',
-    backgroundColor: '#FF94A7',
+    backgroundColor: '#CEB0FF',
     borderRadius: 24,
     paddingLeft: 20,
     paddingRight: 20,

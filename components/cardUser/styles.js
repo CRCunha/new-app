@@ -46,7 +46,7 @@ export default StyleSheet.create({
   cardType1: {
     width: '85%',
     height: '70%',
-    backgroundColor: '#D38DFF',
+    backgroundColor: '#90A9FF',
     borderRadius: 24,
     paddingLeft: 20,
     paddingRight: 20,
@@ -59,7 +59,7 @@ export default StyleSheet.create({
   cardType2: {
     width: '85%',
     height: '70%',
-    backgroundColor: '#FF94A7',
+    backgroundColor: '#CEB0FF',
     borderRadius: 24,
     paddingLeft: 20,
     paddingRight: 20,

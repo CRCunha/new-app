@@ -1,5 +1,6 @@
 import { Avatar, Text } from '@ui-kitten/components';
 import { View, TouchableOpacity } from 'react-native';
+import { Icon } from 'react-native-elements';
 import styles from './styles';
 import moment from 'moment';
 
@@ -33,10 +34,10 @@ const CardOrder = ({data}) => {
       </View>
       <View style={styles.cardAsside}>
         <TouchableOpacity style={styles.buttonAccept}>
-          <Text style={{ color: '#fff' }}></Text>
+          <Icon size={18} color="#fff" name="check" type="feather" />
         </TouchableOpacity>
         <TouchableOpacity style={styles.buttonDecline}>
-          <Text style={{ color: '#fff' }}></Text>
+          <Icon size={18} color="#fff" name="x" type="feather" />
         </TouchableOpacity>
       </View>
     </View>

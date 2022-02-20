@@ -3,9 +3,12 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   layoutStyle: {
     height: '90%',
-    justifyContent: 'center',
-    alignItems: 'stretch',
-    padding: 40,
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    paddingBottom: 10,
+    paddingTop: 5,
+    paddingLeft: 20,
+    paddingRight: 20,
     backgroundColor: '#fff',
   },
   header: {
@@ -23,5 +26,36 @@ export default StyleSheet.create({
     padding: 8,
     width: 30,
     height: 30,
+  },
+  ProfileHeader: {
+    height: 120,
+    paddingLeft: 40,
+    paddingRight: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexWrap: 'nowrap',
+    flexDirection: 'row',
+  },
+  avatar: {
+    borderStyle: 'solid',
+    borderWidth: 1,
+    borderColor: '#fff',
+    width: 75,
+    height: 75,
+  },
+  perfilInfos: {
+    paddingLeft: 20,
+    paddingRight: 20,
+  },
+  name: {
+    color: '#2a2a2c',
+    fontWeight: 'bold',
+    fontSize: 18,
+    height: 30,
+  },
+  descritpion: {
+    color: '#ccc',
+    fontWeight: '400',
+    fontSize: 14,
   },
 });
